@@ -1,5 +1,7 @@
 <div class="location">
+  <% if params[:id] == nil %>
     <h3><%= location.name %></h3>
+  <% end %>
     <h4>City: <%= location.city %></h4>
     <%= location.description %><br>
     <%= link_to image_tag(location.image, class: "location"), location_path(location) %>

@@ -1,5 +1,3 @@
-locations#index page
-
 <p>
   <%= link_to 'New Location', new_location_path %>
 </p>
@@ -8,4 +6,5 @@ locations#index page
 
 <% @locations.each do |current_location| %>
   <%= render 'single_location', location: current_location %>
+  <%= render 'location_form', location: current_location %>
 <% end %>
