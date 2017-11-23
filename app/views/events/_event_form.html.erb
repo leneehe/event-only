@@ -1,0 +1,21 @@
+<%= form_for event do |form_helper| %>
+  <p>
+    <%= form_helper.label :name %>
+    <%= form_helper.text_field :name %>
+  </p>
+  <p>
+    <%= form_helper.label :date %>
+    <%= form_helper.date_field :date %>
+  </p>
+  <p>
+    <%= form_helper.label :capacity %>
+    <%= form_helper.number_field :capacity %>
+  </p>
+  <p>
+    <%= form_helper.label :city %>
+    <%= form_helper.text_field :city %>
+  </p>
+  <p>
+    <%= form_helper.button %>
+  </p>
+<% end %>
